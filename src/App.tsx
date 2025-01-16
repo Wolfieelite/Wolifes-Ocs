@@ -1,14 +1,23 @@
-import { useState } from "react";
-
+import { BrowserRouter, Route, Routes } from "react-router";
 import "./App.css";
+import Home from "./pages/Home";
+import Create from "./pages/Create";
 
 function App() {
+  console.log("hello world");
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      {/* side menu but dynamiccly show icons for which page is shown. Hide if on home page */}
-      {/*  */}
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={<Home />}
+        />
+        <Route
+          path="/createoc"
+          element={<Create />}
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
