@@ -2,3 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body{
+  background: linear-gradient(315deg, #ffffff, #ff9a47, #ffb54d)
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --_mesh-gradient-blur: 100px;
+    --_mesh-gradient-blend-mode: normal;
+
+    /* overflow-y: scroll; */
+    scrollbar-color: black transparent;
+    scrollbar-width: none;
+
+    background: radial-gradient(
+        at 42.03581526861451% 11.076443057722308%,
+        #430070 0px,
+        transparent 50%
+      ),
+      radial-gradient(
+        at 99.71724787935909% 97.65990639625585%,
+        #25015b 0px,
+        transparent 50%
+      ),
+      radial-gradient(
+        at 0.0942507068803016% 2.02808112324493%,
+        #000000 0px,
+        transparent 50%
+      ),
+      radial-gradient(
+        at 92.83694627709707% 20.2808112324493%,
+        #320038 0px,
+        transparent 50%
+      ),
+      radial-gradient(
+        at 96.98397737983035% 4.212168486739469%,
+        #000000 0px,
+        transparent 50%
+      ),
+      radial-gradient(
+        at 65.1272384542884% 54.91419656786272%,
+        #09004d 0px,
+        transparent 50%
+      ),
+      radial-gradient(
+        at 17.907634307257307% 61.46645865834633%,
+        #1c013c 0px,
+        transparent 50%
+      ),
+      radial-gradient(
+        at 4.335532516493874% 21.37285491419657%,
+        #190038 0px,
+        transparent 50%
+      ),
+      radial-gradient(
+          at 91.04618284637135% 83.30733229329174%,
+          #190038 0px,
+          transparent 50%
+        )
+        #000000;
+    background-repeat: no-repeat;
+    mix-blend-mode: var(--_mesh-gradient-blend-mode);
+  }
+}
+
+
+@layer component{
+  .page-layout{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+  }
+}

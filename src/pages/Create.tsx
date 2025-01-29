@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import NavigationBar from "../components/NavigationBar";
 
 function Create() {
   return (
-    <div>create page</div>
-  )
+    <div className="page-layout">
+      <NavigationBar />
+
+      <form>Some contnet</form>
+    </div>
+  );
 }
 
-export default Create
+export default Create;

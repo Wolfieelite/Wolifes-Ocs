@@ -1,10 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router";
-import "./App.css";
 import Home from "./pages/Home";
 import Create from "./pages/Create";
+import { ThemeProvider } from "@mui/material";
 
 function App() {
-  console.log("hello world");
   return (
     <BrowserRouter>
       <Routes>
